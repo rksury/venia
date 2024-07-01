@@ -1,0 +1,39 @@
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <i class="fa-solid fa-bars" id="menubar" onclick="toggleMenu()"></i>
+            <div class="navlogo">
+                VINEA
+            </div>
+            <ul class="navlist">
+                <li class="navitems"><a id="navlink" href="#" >Men</a></li>
+                <li class="navitems"><a id="navlink" href="#" >Women</a></li>
+                <li class="navitems"><a id="navlink" href="#" >Home</a></li>
+                <li class="navitems"><a id="navlink" href="#" >Smart Wear</a></li>
+                <li class="navitems"><a id="navlink" href="#" >Accessories</a></li>
+            </ul>
+            <div>
+                <img src="./assets/cart.png" class="cart-icon" alt="cart" height="30px">
+            </div>
+        </div>
+    </nav>
+    <script>
+      
+
+        function checkWidth() {
+            const navbar = document.querySelector('.navbar');
+            console.log(window.innerWidth)
+            if (window.innerWidth < 768) {
+                navbar.classList.remove('container');
+                navbar.classList.add('container-fluid');
+
+            } else {
+                navbar.classList.add('container');
+                navbar.classList.remove('container-fluid');
+            }
+        }
+
+        window.addEventListener('resize', checkWidth);
+        window.addEventListener('load', checkWidth);
+    </script>
+

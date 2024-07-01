@@ -1,0 +1,57 @@
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="breadcrumbs">
+            <span>Clothing / Women's / Outerwear</span>
+        </div>
+        <div class="results-header">
+            <span id="results-count">0 Results</span>
+            <div class="sort-dropdown">
+                <!-- <label for="sort">Sort by Price</label> -->
+                <select id="sort">
+                    <!-- <label for="sort">Sort by Price</label> -->
+                    <option value="price-asc">Sort by Price</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+       
+        <div class="loading" id="loading" style="display: none;">
+            <span></span><span></span><span></span>
+        </div>
+        <input type="text" id="search-bar" placeholder="Search products..." style="width: auto; padding: 10px; margin-bottom: 20px;">
+        <div class="new" style="display: flex;">
+            <div class="filters">
+                <h3>Filters</h3>
+                <div class="categories">
+                    <h4>Categories</h4>
+                    <div>
+                        <input type="checkbox" id="jewellery" value="jewelery">
+                        <label for="jewellery">Jewellery</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="electronics" value="electronics">
+                        <label for="electronics">Electronics</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mens-clothing" value="men's clothing">
+                        <label for="mens-clothing">Men's Clothing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="womens-clothing" value="women's clothing">
+                        <label for="womens-clothing">Women's Clothing</label>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="product-list" id="product-list">
+                <!-- Products will be displayed here -->
+            </div>
+        </div>
+        <div class="pagination" id="pagination">
+            <!-- Pagination buttons will be inserted here -->
+        </div>
+
+    </div>
+</div>
